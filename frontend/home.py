@@ -11,7 +11,7 @@ def home_page():
                         ("Temperature", "Sky"))
     st.subheader(f"{option} for the next {days} days in {place}")
 
-    dates, temperatures = get_data()
+    dates, temperatures = get_data(place, days, option)
     # Plot Graph
     figure = px.line(x=dates, y=temperatures, labels={
         "X":"Dates",
