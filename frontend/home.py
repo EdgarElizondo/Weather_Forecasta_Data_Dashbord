@@ -1,6 +1,6 @@
 import streamlit as st
 import plotly.express as px
-from backend.src.dummy_data import get_data
+from backend.src.API_data import get_data
 
 # CONSTANTS
 IMAGE_PATH = "frontend/src/images/"
